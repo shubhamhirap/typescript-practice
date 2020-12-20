@@ -49,7 +49,7 @@ function hasName(obj: any): obj is { name: string } {
 if (hasName(myVar)) {
   console.log(myVar.name);
 }
-(myVar as String).toUpperCase();
+// (myVar as String).toUpperCase();
 
 // type inference
 let a;

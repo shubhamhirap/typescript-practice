@@ -24,3 +24,26 @@ var Color;
 })(Color || (Color = {}));
 var c = Color.Green;
 console.log(c);
+// type any
+var randomVal = 10;
+randomVal = true;
+randomVal = "Typescript";
+var myVar = 10;
+function hasName(obj) {
+    return !!obj && typeof obj === "object" && "name" in obj;
+}
+// type assertion - type casting
+if (hasName(myVar)) {
+    console.log(myVar.name);
+}
+// myVar.toUpperCase();
+// type inference
+var a;
+a = false;
+a = 20;
+var b = 89;
+// b = true; // gives error
+// ability to specify union of types for the same variable
+var multiType;
+multiType = 87;
+multiType = true;
